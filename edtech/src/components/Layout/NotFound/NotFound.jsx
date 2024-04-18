@@ -1,0 +1,26 @@
+import React from 'react';
+import { Link } from 'react-router-dom'
+import { Heading, VStack, Container, Box, Text, Button } from '@chakra-ui/react'
+import { RiErrorWarningFill } from 'react-icons/ri';
+
+
+const NotFound = () => {
+  return (
+<Container
+  h="90vh"
+  >  
+   <VStack justifyContent={'center'} h="full" spacing={'4'}>
+     <RiErrorWarningFill size={'5rem'}/>
+   <Heading  children={'Page Not Found'}/>
+
+   <Link to='/'>
+    <Button variant={'ghost'}>Go to home</Button>
+   </Link>
+
+  
+   </VStack>
+  </Container>
+  )
+}
+
+export default NotFound
